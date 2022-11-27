@@ -3492,7 +3492,7 @@ GameObject:
   - component: {fileID: 706198923}
   - component: {fileID: 706198922}
   m_Layer: 0
-  m_Name: AuthManager
+  m_Name: FirebaseManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3520,6 +3520,12 @@ MonoBehaviour:
   pwRegisterField: {fileID: 1507746859}
   cpwRegisterField: {fileID: 630501914}
   warningRegisterText: {fileID: 1790479714}
+  usernameField: {fileID: 2106736360}
+  scoreField: {fileID: 813735360}
+  killsField: {fileID: 775917575}
+  deathsField: {fileID: 441299773}
+  scoreElement: {fileID: 1879445940651037232, guid: 829cd42e5df49e047a3a4afb1ba6859d, type: 3}
+  scoreboardContent: {fileID: 1888326759}
 --- !u!4 &706198923
 Transform:
   m_ObjectHideFlags: 0
@@ -3749,7 +3755,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 713449164}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 706198922}
+        m_TargetAssemblyTypeName: FirebaseManager, Assembly-CSharp
+        m_MethodName: SignOutButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &713449164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7156,9 +7174,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 899568014}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ScoreboardScreen
+      - m_Target: {fileID: 706198922}
+        m_TargetAssemblyTypeName: FirebaseManager, Assembly-CSharp
+        m_MethodName: ScoreboardButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7422,7 +7440,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1328433737}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 706198922}
+        m_TargetAssemblyTypeName: FirebaseManager, Assembly-CSharp
+        m_MethodName: SignOutButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1328433737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10485,7 +10515,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1779113860}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 706198922}
+        m_TargetAssemblyTypeName: FirebaseManager, Assembly-CSharp
+        m_MethodName: SaveDataButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1779113860
 MonoBehaviour:
   m_ObjectHideFlags: 0
