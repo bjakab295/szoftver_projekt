@@ -27,20 +27,20 @@ public class UIManager : MonoBehaviour
 
     //Functions to change the login screen UI
 
-    public void StartScreen()
+    public void StartScreen() //Back button, switch to start screen
     {
         startUI.SetActive(true);
         loginUI.SetActive(false);
         registerUI.SetActive(false);
     }
 
-    public void LoginScreen() //Back button
+    public void LoginScreen() //Back button, switch to login screen
     {
         startUI.SetActive(false);
         loginUI.SetActive(true);
         registerUI.SetActive(false);
     }
-    public void RegisterScreen() // Regester button
+    public void RegisterScreen() // Regester button, swich to register screen
     {
         startUI.SetActive(false);
         loginUI.SetActive(false);
