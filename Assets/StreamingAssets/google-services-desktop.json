@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "354143869740",
+    "project_id": "tothemoon-74192",
+    "storage_bucket": "tothemoon-74192.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354143869740:android:aeb444bcb26259bee76a89",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.ToTheMoon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354143869740-gddaeo23fdpuqcfce91qp2ok1duv0r1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2QqXjgAhsB3FH9kAb1eYkupehAyTqg58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "354143869740-gddaeo23fdpuqcfce91qp2ok1duv0r1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
