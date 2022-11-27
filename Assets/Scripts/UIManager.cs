@@ -11,6 +11,8 @@ public class UIManager : MonoBehaviour
     public GameObject startUI;
     public GameObject loginUI;
     public GameObject registerUI;
+    public GameObject userDataUI;
+    public GameObject scoreboardUI;
 
     private void Awake()
     {
@@ -27,23 +29,43 @@ public class UIManager : MonoBehaviour
 
     //Functions to change the login screen UI
 
-    public void StartScreen() //Back button, switch to start screen
+    public void ClearScreen() //Turn off all screens
     {
-        startUI.SetActive(true);
+        startUI.SetActive(false);
         loginUI.SetActive(false);
         registerUI.SetActive(false);
+        userDataUI.SetActive(false);
+        scoreboardUI.SetActive(false);
     }
 
-    public void LoginScreen() //Back button, switch to login screen
+    public void StartScreen() //Back button
     {
-        startUI.SetActive(false);
-        loginUI.SetActive(true);
-        registerUI.SetActive(false);
+        ClearScreen();
+        startUI.SetActive(true);
+       
     }
-    public void RegisterScreen() // Regester button, swich to register screen
+
+    public void LoginScreen() //Back button
     {
-        startUI.SetActive(false);
-        loginUI.SetActive(false);
+        ClearScreen();
+        loginUI.SetActive(true);
+    }
+    public void RegisterScreen() // Regester button
+    {
+        ClearScreen();
         registerUI.SetActive(true);
     }
+
+    public void UserDataScreen() //Logged in
+    {
+        ClearScreen();
+        userDataUI.SetActive(true);
+    }
+
+    public void ScoreboardScreen() //Scoreboard button
+    {
+        ClearScreen();
+        scoreboardUI.SetActive(true);
+    }
+
 }
